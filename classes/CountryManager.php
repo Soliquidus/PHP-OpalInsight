@@ -15,7 +15,7 @@ class CountryManager
         $req = $this->database->prepare('INSERT INTO country (name, code) VALUES (:name, :code)');
         $req->execute([
             'name' => $country->getName(),
-            'code' => $country->getCode(),
+            'code' => $country->getCode()
         ]);
     }
 
@@ -51,7 +51,7 @@ class CountryManager
         $req = $this->database->prepare('UPDATE country SET name = :name WHERE id = :id');
         $req->execute([
             'id' => $country->getId(),
-            'name' => $country->getName(),
+            'name' => $country->getName()
         ]);
     }
 }
