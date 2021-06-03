@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Opal Insight || <?php if(isset($_SESSION['titre'])) {echo $_SESSION['titre']; }?></title>
+    <title>Opal Insight || <?php if(isset($_SESSION['title'])) {echo $_SESSION['title']; }?></title>
     <link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
 
@@ -18,12 +18,12 @@
    
     <div style='float: right' id="linkConnexion">
         <?php
-            if(isset( $_SESSION['loggedin'] ) &&  $_SESSION['loggedin'] ) {
+            if(isset( $_SESSION['loggedIn'] ) &&  $_SESSION['loggedIn'] ) {
                 ?>
-                <a href="<?php echo $_SESSION['URL'];?>/deconnexion">déconnexion</a>
+                <a href="<?php echo $_SESSION['URL'];?>/logout">déconnexion</a>
                 <?php
             } else {?>
-                <a href="<?php echo $_SESSION['URL'];?>/connexion">connexion</a>
+                <a href="<?php echo $_SESSION['URL'];?>/login">connexion</a>
                 <?php
             }
         ?>

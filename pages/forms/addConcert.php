@@ -32,11 +32,11 @@ $addressManager = new AddressManager($pdo);
         <label for="concert_end">Date de fin</label>
         <input type="datetime-local" name="concert_end" id="concert_end">
         <br>
-        <label for="number_places">Nombre de places</label>
-        <input type="number" name="number_places" id="number_places">
+        <label for="available_tickets">Nombre de places</label>
+        <input type="number" name="available_tickets" id="available_tickets">
         <br>
-        <label for="ticker_price">Prix</label>
-        <input type="number" name="ticker_price" id="ticker_price">
+        <label for="ticket_price">Prix</label>
+        <input type="number" name="ticket_price" id="ticket_price">
         <br>
         <button type="submit">Enregistrer</button>
     </form>
